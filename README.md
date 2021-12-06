@@ -19,7 +19,7 @@ This tool was developed as a project for Data Intensive Distributed Computing CS
 The following steps are required to successfully run this tool on your linux/ hadoop cluster.
 
 ### Data Collection
-We must prepare the data so that we can input it into spark. For that we should avoid sequential reading of files because that will not be scalable to HDFS and it would be required to download bitcoin-core (which I totally wanted to avoid because it was taking 3 days 😔). We used bitcoinlib (https://bitcoinlib.readthedocs.io/en/latest/#) to fetch raw data and store that raw data in a key value format where key is block height and value is the raw data. I have done so in prepareBlocks.py and now I will take you through it.<br><br>
+We must prepare the data so that we can input it into spark. For that we should avoid sequential reading of files because that will not be scalable to HDFS and it would be required to download bitcoin-core (which I totally wanted to avoid because it was taking 3 days 😔). I used bitcoinlib (https://bitcoinlib.readthedocs.io/en/latest/#) to fetch raw data and store that raw data in a key value format where key is block height and value is the raw data. I have done so in prepareBlocks.py and now I will take you through it.<br><br>
 
         usage: prepareBlocks.py [-h] [-n NUM] [-s START] [-r RANGE] [-f FILE] [-e ENV]
 
