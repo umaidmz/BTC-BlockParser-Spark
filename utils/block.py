@@ -1,8 +1,10 @@
 """
 Filename: block.py
-Purpose: definitions blockchain component classes and methods
 
-Authors:
+Current Author:
+    * Umaid Muhammad Zaffar (https://github.com/umaidzz)
+
+Previous Authors:
     * Alex (https://github.com/tenthirtyone)
     * Peng Wu (https://github.com/pw2393)
 
