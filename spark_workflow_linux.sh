@@ -6,11 +6,12 @@ then
   exit 1
 fi
 
-if test -z "$1"
+if [ ! -z "$1" ]
 then
   files=$1
 else
-  files="bitcoinBlocks.txt"
+  echo "Usage: Filename Missing"
+  exit 1
 fi
 
 echo "Input File: $files"

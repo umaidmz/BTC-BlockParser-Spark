@@ -1,7 +1,8 @@
 """
 Author: Umaid Muhammad Zaffar
 
-
+The implementation was partially reused from:
+https://github.com/pw2393/spark-bitcoin-parser
 """
 
 

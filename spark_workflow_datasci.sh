@@ -10,6 +10,9 @@ fi
 if [ ! -z "$1" ]
 then
   files=$1
+else
+  echo "Usage: Filename Missing"
+  exit 1
 fi
 
 echo "###### Removing Previous CSV files... ######"
