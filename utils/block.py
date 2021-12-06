@@ -7,13 +7,6 @@ Current Author:
 Previous Authors:
     * Alex (https://github.com/tenthirtyone)
     * Peng Wu (https://github.com/pw2393)
-
-New features (compared with https://github.com/tenthirtyone/blocktools):
-    * Identify bloch hash
-    * Identify transaction hash
-    # CSV file output
-
-Licenses: MIT
 """
 
 from utils.RawBlockProcessor import *
