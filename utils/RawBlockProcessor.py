@@ -1,3 +1,9 @@
+"""
+Filename: block.py
+Author:
+    * Umaid Muhammad Zaffar (https://github.com/umaidzz)
+"""
+
 import hashlib
 
 def rawpk2hash160(pk_script):
