@@ -48,21 +48,6 @@ class Block:
         for i in range(0, self.txCount):
             tx = Tx(rawblock, self.processor)
             self.Txs.append(tx)
-    
-
-    def toString(self):
-        print("")
-        print( "Magic No: \t%8x" % self.magicNum)
-        print( "Blocksize: \t", self.blocksize)
-        print( "")
-        print( "#" * 10 + " Block Header " + "#" * 10)
-        self.blockHeader.toString()
-        print( "##### Tx Count: %d" % self.txCount)
-        for t in self.Txs:
-            pass
-            #t.toString()
-            #if hashStr(t.hash) == "3ae43bb0a8e4cc3a345a7a2a688217bcb8d9f7e9001263930cd23e9b3b7364c6":
-            #    raise KeyError
 
     def toMemory(self):
         inputrows = []
