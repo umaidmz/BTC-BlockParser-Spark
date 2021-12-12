@@ -50,25 +50,6 @@ class Block:
             self.Txs.append(tx)
     
 
-    def continueParsing(self):
-        return self.continueParsing
-
-    def getBlocksize(self):
-        return self.blocksize
-
-    def hasLength(self, blockchain, size):
-        curPos = blockchain.tell()
-        blockchain.seek(0, 2)
-
-        fileSize = blockchain.tell()
-        blockchain.seek(curPos)
-
-        tempBlockSize = fileSize - curPos
-        #print tempBlockSize
-        if tempBlockSize < size:
-            return False
-        return True
-
     def setHeader(self, block, processor):
         self.blockHeader = BlockHeader(block, processor)
 
