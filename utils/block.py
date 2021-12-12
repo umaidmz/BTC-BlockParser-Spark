@@ -50,9 +50,6 @@ class Block:
             self.Txs.append(tx)
     
 
-    def setHeader(self, block, processor):
-        self.blockHeader = BlockHeader(block, processor)
-
     def toString(self):
         print("")
         print( "Magic No: \t%8x" % self.magicNum)
